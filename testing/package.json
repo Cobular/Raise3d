@@ -1,0 +1,15 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "Test package for the Raise Touch Remote Access API",
+  "type": "module",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "dependencies": {
+    "raise3d-client": "workspace:*"
+  },
+  "devDependencies": {
+    "@peculiar/webcrypto": "^1.4.3"
+  }
+}
