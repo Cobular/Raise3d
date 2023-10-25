@@ -1,0 +1,39 @@
+{
+  "name": "raise3d-client",
+  "version": "1.0.0",
+  "description": "API client for the Raise Touch Remote Access API",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "build:esm": "tsc",
+    "build": "pnpm build:esm && pnpm build:cjs",
+    "build:cjs": "rollup -c"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-typescript": "^7.23.2",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-json": "^6.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/node": "^20.8.8",
+    "cross-env": "^7.0.3",
+    "rollup": "^4.1.4",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-generate-package-json": "^3.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@types/js-md5": "^0.7.1",
+    "@wessberg/rollup-plugin-ts": "^2.0.4",
+    "cross-fetch": "^4.0.0",
+    "js-md5": "^0.8.3"
+  }
+}

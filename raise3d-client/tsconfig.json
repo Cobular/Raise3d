@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "ESNext",
+    "declaration": true,
+    "moduleResolution": "Node",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "sourceMap": true,
+    "importHelpers": true,
+    "rootDir": "./src",
+    "outDir": "./dist/esm",
+    "esModuleInterop": true,   
+    "lib": [
+      "ESNext",
+    ],
+    "noImplicitReturns": true,
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
